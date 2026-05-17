@@ -58,3 +58,28 @@ if (!prefersReducedMotion && supportsRevealObserver) {
     observer.observe(paragraph);
   });
 }
+
+// Software Grid Filtering
+const filterBtns = document.querySelectorAll(".filter-btn");
+const softwareCards = document.querySelectorAll(".software-card");
+
+if (filterBtns.length > 0 && softwareCards.length > 0) {
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove("active"));
+      // Add active class to clicked button
+      btn.classList.add("active");
+
+      const filterValue = btn.getAttribute("data-filter");
+
+      softwareCards.forEach(card => {
+        if (filterValue === "all" || card.getAttribute("data-category") === filterValue) {
+          card.style.display = "grid"; // Restore to grid to keep internal card styling
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+}
