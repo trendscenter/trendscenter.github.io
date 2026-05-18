@@ -1,2 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TReNDS Center - Open Source Software</title>
+  <meta name="description" content="TReNDS Center develops open-source tools and platforms for neuroimaging analysis, federated learning, and collaborative brain research.">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <main>
+    <section id="intro">
+      <div class="landing">
+        <div class="landing-lockup">
+          <h1 class="landing-word">
+            <span class="landing-word-blue">TR</span><span class="landing-word-red">eN</span><span class="landing-word-yellow">DS</span>
+          </h1>
+          <p class="landing-subtitle">open source software</p>
+        </div>
+        <nav class="landing-nav" aria-label="Section links">
+          <a href="#about">about</a>
+          <span class="landing-nav-divider">|</span>
+          <a href="#software">software</a>
+          <span class="landing-nav-divider">|</span>
+          <a href="#contact">contact</a>
+        </nav>
+      </div>
+    </section>
 
-<meta http-equiv="refresh" content="0; URL='https://trendscenter.github.io/wiki'" />
+    <section id="about">
+      <div class="section-box">
+        <p class="about-lede">TReNDS develops, applies, and shares advanced analytic approaches and neuroinformatics tools that turn brain imaging, omics, and large-scale data into discoveries for brain health and disease.</p>
+
+        <div class="about-features">
+          <article class="about-feature">
+            <h2>Neuroimaging Discovery</h2>
+            <p>We build methods that help researchers study brain structure, function, and dynamics across clinical and nonclinical populations.</p>
+          </article>
+
+          <article class="about-feature">
+            <h2>Data Fusion</h2>
+            <p>We connect multimodal brain imaging, omics, and machine learning to reveal patterns that single datasets cannot show alone.</p>
+          </article>
+
+          <article class="about-feature">
+            <h2>Open Collaboration</h2>
+            <p>We share software, data practices, and neuroinformatics tools through a collaborative center across GSU, Georgia Tech, and Emory.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="software">
+      <div class="section-box">
+        <p class="section-lede">We publish the results of our research as open-source software and research platforms. Below is a selection of tools from TReNDS for neuroimaging analysis, multimodal data fusion, simulation, machine learning, and brain connectivity research.</p>
+
+        <div class="software-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="matlab">MATLAB</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="learning">Deep/Machine Learning</button>
+          <button class="filter-btn" data-filter="simulation">Simulation</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <div class="software-grid">
+          <article class="software-card" data-category="other">
+            <p class="software-meta">Analysis Toolbox</p>
+            <h3>4D FFT Toolbox</h3>
+            <p>Computes spatio-spectral temporal profiles for 4D imaging data.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/fft4/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="other">
+            <p class="software-meta">Connectivity</p>
+            <h3>Average Sliding Window</h3>
+            <p>Simulation code and examples for average sliding window correlation in dynamic functional connectivity.</p>
+            <a class="software-link" href="https://github.com/vmve/ASWC" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="python">
+            <p class="software-meta">Python Package</p>
+            <h3>brainbow</h3>
+            <p>Visualizes ICA components and ROI brain parcellations from NIfTI maps.</p>
+            <a class="software-link" href="https://pypi.org/project/brainbow/" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="other">
+            <p class="software-meta">Web Platform</p>
+            <h3>Brainchop</h3>
+            <p>Browser-based brain image segmentation for working with imaging models and segmentation workflows directly on the web.</p>
+            <a class="software-link" href="https://brainchop.org/" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="python">
+            <p class="software-meta">Command Line</p>
+            <h3>brainchop</h3>
+            <p>A separate Python package for running Brainchop workflows from the command line.</p>
+            <a class="software-link" href="https://pypi.org/project/brainchop/" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="learning">
+            <p class="software-meta">PyTorch Framework</p>
+            <h3>Catalyst Neuro</h3>
+            <p>PyTorch framework for deep learning research and development.</p>
+            <a class="software-link" href="https://github.com/catalyst-team/neuro" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="learning">
+            <p class="software-meta">Deep Learning</p>
+            <h3>Cortex</h3>
+            <p>A framework for training and evaluating neural networks using Theano.</p>
+            <a class="software-link" href="https://github.com/rdevon/cortex" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="simulation">
+            <p class="software-meta">Simulation Toolbox</p>
+            <h3>fMRI Simulation Toolbox (SimTB)</h3>
+            <p>Generates flexible fMRI datasets under a model of spatiotemporal separability for testing analysis methods.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/simtb/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Functional Network Connectivity (FNC)</h3>
+            <p>Finds and displays temporal relationships among components to help study causal relations in the brain.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/fnc/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Fusion ICA Toolbox (FIT)</h3>
+            <p>Supports joint ICA, parallel ICA, and CCA with joint ICA for examining shared information across imaging, EEG, and genetic features.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/fit/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Group ICA Toolbox (GIFT and EEGIFT)</h3>
+            <p>Implements multiple algorithms for independent component analysis and blind source separation of group and single-subject fMRI and EEG data.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gift/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Group Inter-participant Correlation (GIPC)</h3>
+            <p>Compares spatial activation similarities among subjects and across study groups.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/gipc/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="learning">
+            <p class="software-meta">Machine Learning</p>
+            <h3>IRVI</h3>
+            <p>Implements iterative refinement of the approximate posterior for directed belief networks.</p>
+            <a class="software-link" href="https://github.com/rdevon/IRVI" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Laterality User Interface (LUI)</h3>
+            <p>Generates lateral difference maps from brain images for laterality-focused analysis.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/lui/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="other">
+            <p class="software-meta">Analysis Toolbox</p>
+            <h3>MANCOVAN</h3>
+            <p>Tools for multivariate analysis in neuroimaging research workflows.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/mancovan/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="learning">
+            <p class="software-meta">Segmentation</p>
+            <h3>MeshNet</h3>
+            <p>Torch implementation of the MeshNet architecture and trained weights for white and gray matter segmentation.</p>
+            <a class="software-link" href="https://github.com/Entodi/MeshNet" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="python">
+            <p class="software-meta">Python Package</p>
+            <h3>mindfultensors</h3>
+            <p>Builds dataloaders for MRI tensors and segmentation labels stored across MongoDB records.</p>
+            <a class="software-link" href="https://pypi.org/project/mindfultensors/" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="learning">
+            <p class="software-meta">PyTorch Implementation</p>
+            <h3>MISA-pytorch</h3>
+            <p>PyTorch implementation for Multidataset Independent Subspace Analysis.</p>
+            <a class="software-link" href="https://github.com/trendscenter/MISA-pytorch" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="learning">
+            <p class="software-meta">Deep Learning</p>
+            <h3>Pl2mind</h3>
+            <p>Extends Pylearn2 for neuroimaging and brain data applications, including datasets for incorporating 3D brain data into deep models.</p>
+            <a class="software-link" href="https://github.com/MRN-Code/pl2mind" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="python">
+            <p class="software-meta">Python Package</p>
+            <h3>polyssifier</h3>
+            <p>Runs many classifiers on a dataset and produces AUC reports for comparing model performance.</p>
+            <a class="software-link" href="https://github.com/alvarouc/polyssifier" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="simulation">
+            <p class="software-meta">Simulation</p>
+            <h3>SIMEEG</h3>
+            <p>EEG simulation scripts for generating and testing EEG analysis workflows.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/simeeg/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="simulation">
+            <p class="software-meta">Simulation</p>
+            <h3>sMRI Simulator</h3>
+            <p>Simulates structural MRI data and includes an example simulation notebook.</p>
+            <a class="software-link" href="https://github.com/alvarouc/data_generator" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Square-root Cubature Kalman Filter (SCKS)</h3>
+            <p>Contains implementations of the square-root Cubature Kalman Filter and square-root Rauch-Tang-Striebel smoother.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/scks/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="matlab">
+            <p class="software-meta">MATLAB Toolbox</p>
+            <h3>Wavelet Denoising Toolbox (WaveIDioT)</h3>
+            <p>Provides improved 3D denoising of fMRI datasets using a wavelet-based hierarchical approach.</p>
+            <a class="software-link" href="https://trends-public-website-fileshare.s3.amazonaws.com/public_website_files/software/waveidiot/index.html" target="_blank" rel="noopener">View</a>
+          </article>
+
+          <article class="software-card" data-category="python">
+            <p class="software-meta">Python Package</p>
+            <h3>wirehead</h3>
+            <p>Caches and serves synthetic data generator output through MongoDB-backed datasets.</p>
+            <a class="software-link" href="https://pypi.org/project/wirehead/" target="_blank" rel="noopener">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <p class="contact-copy">connect with us, browse our code, or read the project documentation.</p>
+    <div class="contact-links" aria-label="Contact links">
+      <a class="contact-link" href="https://github.com/trendscenter" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+      <a class="contact-link" href="https://trendscenter.org" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9h-3.02a15.6 15.6 0 0 0-1.13-5.02A8.03 8.03 0 0 1 18.93 11ZM12 4.04c.56.8 1.55 2.76 1.88 6.96h-3.76C10.45 6.8 11.44 4.84 12 4.04ZM4.26 13h3.83c.12 1.95.47 3.66.96 5.02A8.03 8.03 0 0 1 4.26 13Zm3.83-2H5.07a8.03 8.03 0 0 1 4.15-5.02A15.6 15.6 0 0 0 8.09 11ZM12 19.96c-.56-.8-1.55-2.76-1.88-6.96h3.76c-.33 4.2-1.32 6.16-1.88 6.96Zm2.95-1.94c.49-1.36.84-3.07.96-5.02h3.83a8.03 8.03 0 0 1-4.79 5.02Z"/>
+        </svg>
+        Website
+      </a>
+      <a class="contact-link" href="https://trendscenter.github.io/wiki" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6 2h11a3 3 0 0 1 3 3v17H7a3 3 0 0 1-3-3V4a2 2 0 0 1 2-2Zm1 15a2.98 2.98 0 0 0-1 .17V19a1 1 0 0 0 1 1h11v-3H7Zm1-11v2h8V6H8Zm0 4v2h8v-2H8Z"/>
+        </svg>
+        Wiki
+      </a>
+    </div>
+    <p class="footer-copy">TReNDS Center 2026</p>
+  </footer>
+
+  <script src="animations.js"></script>
+</body>
+</html>
